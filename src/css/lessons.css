@@ -1,0 +1,144 @@
+.lessons-package-interpretation {
+  line-height: 1.71;
+  color: var(--p-text);
+}
+
+.lessons {
+  padding: 40px 0 80px;
+  text-align: center;
+}
+
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lessons-list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  border: 1px solid var(--dark-green-color);
+  border-radius: 16px;
+  min-height: 400px;
+  width: 100%;
+}
+
+.lessons-package-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.lessons-package-price {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.lessons-package-interpretation {
+  margin-bottom: auto;
+}
+
+.lessons-button {
+  border-radius: 12px;
+  background-color: var(--dark-green-color);
+  border: none;
+  font-weight: 700;
+  line-height: 1.71;
+  color: var(--white-color);
+  width: 100%;
+  height: 60px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lessons-list-item:nth-of-type(2) {
+  background: var(--dark-green-color);
+  border-radius: 16px;
+}
+
+.lessons-list-item:nth-of-type(2) p,
+.lessons-list-item:nth-of-type(2) .lessons-package-title {
+  color: var(--white-color);
+}
+
+.lessons-list-item:nth-of-type(2) .lessons-button {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.lessons-button:hover,
+.lessons-button:focus {
+  background: #38ae5f;
+}
+
+.lessons-list-item:nth-of-type(2) .lessons-button:hover,
+.lessons-list-item:nth-of-type(2) .lessons-button:focus {
+  background: var(--white-color);
+  color: var(--dark-green-color);
+}
+
+@media screen and (min-width: 768px) {
+  .lessons .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lessons-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 704px;
+    gap: 32px;
+  }
+
+  .lessons-package-interpretation {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .lessons-button {
+    line-height: 1.56;
+    font-size: 18px;
+  }
+
+  .lessons-list-item {
+    padding: 32px 16px;
+    border-radius: 30px;
+    flex-basis: calc((100% - 32px) / 2);
+    min-height: 404px;
+  }
+
+  .lessons-package-price {
+    margin-bottom: 32px;
+  }
+
+  .lessons {
+    padding: 50px 0 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lessons-package-price {
+    margin-bottom: 16px;
+  }
+
+  .lessons-list-item {
+    padding: 32px;
+    flex-basis: calc((100% - 64px) / 3);
+  }
+
+  .lessons-list {
+    max-width: 1024px;
+    justify-content: center;
+  }
+  .lessons {
+    padding: 75px 0 150px;
+  }
+}

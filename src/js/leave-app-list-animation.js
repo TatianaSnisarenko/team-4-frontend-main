@@ -13,12 +13,12 @@ function isInViewport(element) {
   );
 }
 
-if(isInViewport(leaveAppList)) {
-  leaveAppList.children[0].style.opacity = "1";
-  leaveAppList.children[1].style.opacity = "1";
-  leaveAppList.children[2].style.opacity = "1";
-  leaveAppBtn.style.opacity = "1";
-}else {
+if (isInViewport(leaveAppList)) {
+  leaveAppList.children[0].style.opacity = '1';
+  leaveAppList.children[1].style.opacity = '1';
+  leaveAppList.children[2].style.opacity = '1';
+  leaveAppBtn.style.opacity = '1';
+} else {
   window.addEventListener('scroll', () => {
     if (isInViewport(leaveAppList)) {
       leaveAppList.classList.add('anim-fade-in');
@@ -26,5 +26,3 @@ if(isInViewport(leaveAppList)) {
     }
   });
 }
-
-
